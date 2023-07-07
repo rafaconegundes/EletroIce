@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Teko:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(255, 255, 255);
+
+}
+header{
+   display: flex;
+    padding: 0.5rem;
+    background-color: #e7e7e7a6;;
+  
+}
+header img{
+    display: block;
+    margin: auto;
+}
+.container{
+    display:flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #fff;
+    padding: 1rem;
+}
+
+.form{
+    width: 50%;
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7e7e7a6;
+    padding: 3rem;
+}
+.form-image img{
+    width: 35rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #5bb1b1;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.sair-button a {
+    display: flex;
+    align-items: center;
+}
+.sair-button a{
+    border: none;
+    background-color: #5bb1b1;
+    padding: 0.7rem 0.9rem ;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.sair-button a:hover{
+    background-color: #000000f1;
+}
+.sair-button  a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+
+}
+
+.form-cadastre{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.438)
+}
+.form-cadastre label{
+    padding: 10px;
+    background-color: #5bb1b1;
+    border-radius: 10px 10px 0px 0px;
+     border: solid 0.1px darkgray;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.form-cadastre input{
+    width: 50vh;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-radius: 0px 0px 8px 8px;
+    border: solid 1px darkgray;
+   
+}
+.form-cadastre input:hover{
+    background-color: #eeeeee93;
+}
+.form-cadastre input:focus-visible{
+    outline: 1px solid #5bb1b1;
+}
+
+.cad-button input{
+    color: #fff;
+    font-weight: 500;
+    align-items: center;
+    text-transform: uppercase;
+   display: block;
+   width: 50vh;
+   margin: auto;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: #5bb1b1;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cad-button input:hover{
+    background-color: #000000;
+    color: #fff;
+}
+

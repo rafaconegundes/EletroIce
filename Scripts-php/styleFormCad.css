@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Teko:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(255, 255, 255);
+}
+header{
+   display: flex;
+    background-color: #e7e7e7a6;;
+  
+}
+header img{
+    display: block;
+    margin: auto;
+}
+
+.container{
+    display:flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.226);
+}
+.form-image{
+ 
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #fff;    
+    padding: 1rem;
+}
+
+.sliders{
+    margin: auto;
+   overflow: hidden;
+}
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+}
+.slides input{
+    display: none;
+    
+}
+.slide{
+    width: 25%;
+    transition: 2s;
+    position: relative;
+}
+.slide img{
+    margin: auto;
+    display: block;
+  
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #000000;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+
+.form{
+    
+    width: 50%;
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e7e7e7a6;
+    padding: 3rem;
+}
+.form-image img{
+    width: 25rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+display: flex;
+    justify-content: space-between;
+}
+.form-header h1::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color:  #5bb1b1;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+
+.login-button {
+    display: flex;
+    align-items: center;
+}
+.login-button a {
+    border: none;
+    background-color:  #5bb1b1;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-button a:hover{
+    background-color: #797979f1;
+}
+.login-button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.table-linha{
+    background-color: rgba(249, 246, 242);
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 1px 3px rgb(159, 159, 159);
+}
+
+
+.input-box1{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.3rem 0;
+}
+.input-box1 label{
+    font-family: 'Inter', sans-serif;
+   
+    background-color:  #e7e7e7a6;
+    border-radius: 5px 0px 0px 5px;
+    padding: 10px;
+    width: 20%;
+    border: 1px solid darkgray;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid darkgray;
+}
+.input-box1 input{
+    
+    border-radius: 0px 5px 5px 0px ;
+    border: 1px solid darkgray;
+    width: 80%;
+    padding: 0.8rem 1.2rem;
+    
+    cursor: pointer;
+}
+.input-box1 input:focus-visible{
+    outline: 1px solid  #5bb1b1;
+}
+
+.input-box1 input:hover{
+    background-color: #e4e4e4a6;
+}
+
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 0.3rem 0;
+}
+
+.input-box label{
+    width: 21%;
+
+    text-transform: uppercase;
+      background-color:  #e7e7e7a6;
+      border-radius: 5px 0px 0px 5px;
+       padding: 13px;
+        text-align: center;
+        font-weight: bold;
+         font-size: 12px;
+         border: 1px solid darkgray;
+}
+.input-box select{
+    border-radius: 0px 5px 5px 0px ;
+    margin-left: -5px;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid darkgray;
+    box-shadow: 1px 1px 6px #0000001c;
+    cursor: pointer;
+}
+.input-box option{
+    background-color: #88b6c763;
+}
+
+.input-box select:hover{
+    background-color: #eeeeee93;
+}
+
+.input-box select:focus-visible{
+    outline: 1px solid #6c63ff;
+}
+
+.input-box select {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+
+.cad-button button{
+    width: 600px;
+    margin-top: 2.5rem;
+    border: none;
+    background-color:  #5bb1b1;
+
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+}
+.cad-button button:hover{
+    
+    background-color: #000000;
+}
+
